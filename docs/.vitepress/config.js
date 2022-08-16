@@ -22,14 +22,18 @@ const nav = [
 ]
 
 const sidebar_doc = {
-  '/ts/config/': [ // TSConfig.json 配置文件
+  '/ts/tsconfig/': [ // TSConfig.json 配置文件
     {
-      text: 'TypeScript配置文件',
+      text: 'TSConfig',
       items: [
-        {
-          text: 'README',
-          link: '/ts/tsconfig/index',
-        },
+        { text: 'Introduce', link: '/ts/tsconfig/index' },
+      ]
+    },
+    {
+      text: 'Root Fields',
+      collapsible: true,
+      items: [
+        { text: 'Root Fields', link: '/ts/tsconfig/root/root-fields' },
       ]
     }
   ],
