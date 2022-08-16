@@ -33,11 +33,12 @@ const sidebar_doc = {
       text: 'Root Fields',
       collapsible: true,
       items: [
-        { text: 'Root Fields', link: '/ts/tsconfig/root/root-fields' },
+        { text: '根字段介绍', link: '/ts/tsconfig/root/root-fields' },
         { text: 'files', link: '/ts/tsconfig/root/files' },
         { text: 'extends', link: '/ts/tsconfig/root/extends' },
         { text: 'include', link: '/ts/tsconfig/root/include' },
         { text: 'exclude', link: '/ts/tsconfig/root/exclude' },
+        { text: 'references', link: '/ts/tsconfig/root/references' },
       ]
     }
   ],
