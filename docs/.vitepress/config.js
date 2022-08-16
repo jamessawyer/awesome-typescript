@@ -34,6 +34,7 @@ const sidebar_doc = {
       collapsible: true,
       items: [
         { text: 'Root Fields', link: '/ts/tsconfig/root/root-fields' },
+        { text: 'files', link: '/ts/tsconfig/root/files' },
       ]
     }
   ],
