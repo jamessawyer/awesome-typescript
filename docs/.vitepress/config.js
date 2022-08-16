@@ -35,6 +35,7 @@ const sidebar_doc = {
       items: [
         { text: 'Root Fields', link: '/ts/tsconfig/root/root-fields' },
         { text: 'files', link: '/ts/tsconfig/root/files' },
+        { text: 'extends', link: '/ts/tsconfig/root/extends' },
       ]
     }
   ],
