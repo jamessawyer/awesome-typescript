@@ -11,8 +11,8 @@ title: tsconfig.json
 1. 所有编译器标志的分类概述
 2. [root fields](./root/index) （根字段）让TS知道哪些文件可以是可以访问到的
 3. [compiler options](./compiler/index) (编译选型)字段，是整个文档的主体部分
-4. [watch options](./watch-options) （监听选型）字段，用于调整监听模式
-5. [type acquisition](./type-acquisition) （类型识别）字段，用于调整类型添加到JavaScript项目的方式
+4. [watch options](./watch/index) （监听选型）字段，用于调整监听模式
+5. [type acquisition](./type-acquisition/index) （类型识别）字段，用于调整类型添加到JavaScript项目的方式
 
 如果你从头开始TSConfig，你可能需要使用 `tsc --init` 初始化一个 `tsconfig.json` 配置，或者使用 [tsconfig bases](https://github.com/tsconfig/bases#centralized-recommendations-for-tsconfig-bases)
 
