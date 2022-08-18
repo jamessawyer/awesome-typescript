@@ -40,7 +40,15 @@ const sidebar_doc = {
         { text: 'exclude', link: '/ts/tsconfig/root/exclude' },
         { text: 'references', link: '/ts/tsconfig/root/references' },
       ]
-    }
+    },
+    {
+      text: 'Compiler Options',
+      collapsible: true,
+      items: [
+        { text: '编译选项', link: '/ts/tsconfig/compiler/index' },
+        { text: '类型检测', link: '/ts/tsconfig/compiler/type-checking' },
+      ]
+    },
   ],
 }
 const sidebar_blog = {
