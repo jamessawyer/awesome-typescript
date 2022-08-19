@@ -50,6 +50,7 @@ const sidebar_doc = {
         { text: '模块（modules）', link: '/ts/tsconfig/compiler/modules' },
         { text: '生成产物（Emit）', link: '/ts/tsconfig/compiler/emit' },
         { text: 'JS支持', link: '/ts/tsconfig/compiler/js-support' },
+        { text: '编辑器支持', link: '/ts/tsconfig/compiler/editor-support' },
       ]
     },
   ],

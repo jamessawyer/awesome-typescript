@@ -7,3 +7,4 @@ title: 编译选项
 - [模块相关配置](./modules)
 - [emit产物](./emit)
 - [js支持](./js-support)
+- [编辑器支持](./editor-support)
