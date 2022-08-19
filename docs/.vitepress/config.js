@@ -49,6 +49,7 @@ const sidebar_doc = {
         { text: '类型检测', link: '/ts/tsconfig/compiler/type-checking' },
         { text: '模块（modules）', link: '/ts/tsconfig/compiler/modules' },
         { text: '生成产物（Emit）', link: '/ts/tsconfig/compiler/emit' },
+        { text: 'JS支持', link: '/ts/tsconfig/compiler/js-support' },
       ]
     },
   ],

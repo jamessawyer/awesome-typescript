@@ -6,3 +6,4 @@ title: 编译选项
 - [类型检测](./type-checking)
 - [模块相关配置](./modules)
 - [emit产物](./emit)
+- [js支持](./js-support)
