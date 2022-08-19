@@ -47,6 +47,7 @@ const sidebar_doc = {
       items: [
         { text: '编译选项', link: '/ts/tsconfig/compiler/index' },
         { text: '类型检测', link: '/ts/tsconfig/compiler/type-checking' },
+        { text: '模块（modules）', link: '/ts/tsconfig/compiler/modules' },
       ]
     },
   ],
