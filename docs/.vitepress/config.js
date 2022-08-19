@@ -46,11 +46,12 @@ const sidebar_doc = {
       collapsible: true,
       items: [
         { text: '编译选项', link: '/ts/tsconfig/compiler/index' },
-        { text: '类型检测', link: '/ts/tsconfig/compiler/type-checking' },
-        { text: '模块（modules）', link: '/ts/tsconfig/compiler/modules' },
-        { text: '生成产物（Emit）', link: '/ts/tsconfig/compiler/emit' },
+        { text: '⚡类型检测', link: '/ts/tsconfig/compiler/type-checking' },
+        { text: '⚡模块（modules）', link: '/ts/tsconfig/compiler/modules' },
+        { text: '⚡生成产物（Emit）', link: '/ts/tsconfig/compiler/emit' },
         { text: 'JS支持', link: '/ts/tsconfig/compiler/js-support' },
         { text: '编辑器支持', link: '/ts/tsconfig/compiler/editor-support' },
+        { text: '⚡互操性约束', link: '/ts/tsconfig/compiler/interop-constraints' },
       ]
     },
   ],
