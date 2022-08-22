@@ -63,7 +63,16 @@ const sidebar_doc = {
           text: 'watch配置项', link: '/ts/tsconfig/watch/index'
         },
       ]
-    }
+    },
+    {
+      text: 'Type Acquisition',
+      collapsible: true,
+      items: [
+        {
+          text: '类型识别', link: '/ts/tsconfig/type-acquisition/index'
+        },
+      ]
+    },
   ],
 }
 const sidebar_blog = {
