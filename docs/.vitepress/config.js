@@ -55,6 +55,15 @@ const sidebar_doc = {
         { text: '语言和环境', link: '/ts/tsconfig/compiler/lang-and-env' },
       ]
     },
+    {
+      text: 'Watch Options',
+      collapsible: true,
+      items: [
+        {
+          text: 'watch配置项', link: '/ts/tsconfig/watch/index'
+        },
+      ]
+    }
   ],
 }
 const sidebar_blog = {
