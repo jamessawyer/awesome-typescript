@@ -8,7 +8,7 @@ title: Interop Constraints
 
 ## `allowSyntheticDefaultImports` 👍 - 允许合成默认导入
 
-当设置为 `true`，`allowSyntheticDefaultImports` 允许你向下面哪些写导入：
+当设置为 `true`，`allowSyntheticDefaultImports` 允许你像下面那样导入：
 
 ```typescript
 import React from 'react'
@@ -66,6 +66,8 @@ module.exports.default = allFunctions
 - [esModuleInterop](#esmoduleinterop-👍🚀🚀)
 
 :::
+
+
 
 
 
@@ -169,7 +171,11 @@ lodash_1.default.chunk(["a", "b", "c", "d"], 2);
 
 相关联配置：
 
-- [allowSyntheticDefaultImports](#allowsyntheticdefaultimports-👍-允许合成默认导入)
+- [`allowSyntheticDefaultImports` 👍 - 允许合成默认导入](#allowsyntheticdefaultimports----允许合成默认导入)
+- [`esModuleInterop` 👍🚀🚀](#esmoduleinterop-)
+- [`isolatedModules ` 👍🚀](#isolatedmodules--)
+- [`preserveSymlinks`](#preservesymlinks)
+- [译者补充 🚀](#译者补充-)
 
 :::
 
@@ -282,6 +288,80 @@ console.log(0 + 1);
 原文档：
 
 - [Interop Constraints](https://www.typescriptlang.org/tsconfig#Interop_Constraints_6252)
+
+
+
+## 译者补充 🚀
+
+::: tip 🚀
+
+TS 中存在多种`import`方式，分别对应了JS中不同的`export`
+
+```typescript
+// common.js 模块
+// Node.js 中的模块大部分通过 `module.exports`，`exports.xx`  语法进行导出的
+import * as xx from 'xx'
+
+// 标准ESM模块
+// 对应 export const = xx || export default xxx
+import xx from 'xx'
+
+// commonjs模块，类型声明为 export = xx
+import xx = require('xx')
+
+// 没有类型声明，默认导入 any 类型
+const xx = require('xx')
+```
+
+`babel` 会将ESM模块的 `export default` 语法编译为 `exports.default` 语法。
+
+针对 `babel` 编译出来的 `exports.default` 语法，ts提供了 `allowSyntheticDefaultImports` 选项可以支持，它会检测模块是否是ESM模块，如果不是，则查找模块中是否有 `exports.default` 导出，从而达到针对 `exports.default` 的兼容。
+
+比如：`ts` 下面方式导入 `React` 会报错
+
+```typescript
+// ❌ Module `react` has no default export
+import React from 'react' 
+```
+
+因为 `react` 是以 commonJS形式导出的， 必须下面方式使用：
+
+```typescript
+import * as React from 'react'
+```
+
+下面对 `tsconfig.json` 进行配置
+
+```json
+{
+  "compilerOptions": {
+    "module": "es2015", 
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true // 实际上 module 定义为 es2015 后，这个值会被忽略
+  }
+}
+```
+
+之后再使用 `import React from 'react'` 就不会报错了。
+
+
+
+但是更建议不开启 `allowSyntheticDefaultImports`, 使用下面方式，将 `default` 重命名:（但实际项目中，上面方式更为常见😅）
+以 `electron-store` 库为例：
+```typescript
+import { default as Store } from 'electron-store'
+```
+
+参考：
+
+- [TypeScript 中的多种 import 解义](https://tasaid.com/blog/2019022017450863.html)
+- [由 allowSyntheticDefaultImports 引起的思考](https://blog.leodots.me/post/40-think-about-allowSyntheticDefaultImports.html)
+
+:::
+
+
+
+
 
 2022年08月19日22:48:36
 
