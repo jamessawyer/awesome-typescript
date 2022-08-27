@@ -53,6 +53,7 @@ const sidebar_doc = {
         { text: '编辑器支持', link: '/ts/tsconfig/compiler/editor-support' },
         { text: '⚡互操性约束', link: '/ts/tsconfig/compiler/interop-constraints' },
         { text: '语言和环境', link: '/ts/tsconfig/compiler/lang-and-env' },
+        { text: '完整性', link: '/ts/tsconfig/compiler/completeness' },
       ]
     },
     {
