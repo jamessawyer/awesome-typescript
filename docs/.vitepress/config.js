@@ -3,6 +3,7 @@ const nav = [
     text: '📄ts Docs', 
     items: [
       { text: 'tsconfig', link: '../ts/tsconfig/index' },
+      { text: 'd.ts声明文件', link: '../ts/dfile/index' },
     ] 
   },
   { text: '🤔blog', link: '/blog/first' },
@@ -72,6 +73,15 @@ const sidebar_doc = {
         {
           text: '类型识别', link: '/ts/tsconfig/type-acquisition/index'
         },
+      ]
+    },
+  ],
+  '/ts/dfile': [ // TypeScript 声明文件.d.ts
+    {
+      text: '声明文件',
+      items: [
+        { text: 'Introduce', link: '/ts/dfile/index' },
+        { text: '声明参考手册', link: '/ts/dfile/declaration-reference' },
       ]
     },
   ],
