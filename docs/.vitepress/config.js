@@ -82,6 +82,7 @@ const sidebar_doc = {
       items: [
         { text: 'Introduce', link: '/ts/dfile/index' },
         { text: '声明参考手册', link: '/ts/dfile/declaration-reference' },
+        { text: '库结构', link: '/ts/dfile/library-structure' },
       ]
     },
   ],
