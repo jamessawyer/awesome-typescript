@@ -86,6 +86,7 @@ const sidebar_doc = {
         { text: '模板Modules .d.ts', link: '/ts/dfile/templates/modules-d-ts'},
         { text: '模板Modules Plugin', link: '/ts/dfile/templates/modules-plugin'},
         { text: '模板Modules Class', link: '/ts/dfile/templates/modules-class'},
+        { text: '模板Modules Function', link: '/ts/dfile/templates/modules-function'},
       ]
     },
   ],
