@@ -83,6 +83,7 @@ const sidebar_doc = {
         { text: 'Introduce', link: '/ts/dfile/index' },
         { text: '声明参考手册', link: '/ts/dfile/declaration-reference' },
         { text: '库结构', link: '/ts/dfile/library-structure' },
+        { text: '模板Modules .d.ts', link: '/ts/dfile/templates/modules-d-ts'},
       ]
     },
   ],
