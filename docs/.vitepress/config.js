@@ -90,6 +90,7 @@ const sidebar_doc = {
         { text: '模板 修改全局模块', link: '/ts/dfile/templates/global-modify-module'},
         { text: '可为与不可为', link: '/ts/dfile/do-and-not-do'},
         { text: '深入理解', link: '/ts/dfile/deep-dive'},
+        { text: '发布', link: '/ts/dfile/publishing'},
       ]
     },
   ],
