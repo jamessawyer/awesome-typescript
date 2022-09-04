@@ -91,6 +91,7 @@ const sidebar_doc = {
         { text: '可为与不可为', link: '/ts/dfile/do-and-not-do'},
         { text: '深入理解', link: '/ts/dfile/deep-dive'},
         { text: '发布', link: '/ts/dfile/publishing'},
+        { text: '使用声明文件', link: '/ts/dfile/consumption'},
       ]
     },
   ],
