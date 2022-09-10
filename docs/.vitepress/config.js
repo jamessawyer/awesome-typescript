@@ -4,6 +4,7 @@ const nav = [
     items: [
       { text: 'tsconfig', link: '../ts/tsconfig/index' },
       { text: 'd.ts声明文件', link: '../ts/dfile/index' },
+      { text: 'reference', link: '../ts/reference/index' },
     ] 
   },
   { text: '🤔blog', link: '/blog/first' },
@@ -95,6 +96,14 @@ const sidebar_doc = {
       ]
     },
   ],
+  '/ts/reference': [
+    {
+      text: '📚参考手册',
+      items: [
+        { text: '工具类型', link: '/ts/reference/utility-types' },
+      ],
+    },
+  ]
 }
 const sidebar_blog = {
   '/blog/': [
