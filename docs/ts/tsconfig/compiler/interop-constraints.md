@@ -185,7 +185,7 @@ lodash_1.default.chunk(["a", "b", "c", "d"], 2);
 
 
 
-你可以使用TS从TS代码中生成JS代码，使用其它转译器，比如 [Babel](https://babeljs.io/) 来完成这些也很常见。但是其它转译器只能依次操作一个文件，这也意味着它们不能在完全理解整个类型系统的基础上应用代码转换。这种限制也存在于TypeScript的 `ts.transpileModule` API上，这个API被用于某些构建工具。
+你可以使用TS从TS代码中生成JS代码，使用其它转译器，比如 [Babel](https://babeljs.io/) 来完成这些也很常见。但是其它转译器只能一次操作一个文件，这也意味着它们不能在完全理解整个类型系统的基础上应用代码转换。这种限制也存在于TypeScript的 `ts.transpileModule` API上，这个API被用于某些构建工具。
 
 ::: tip
 
