@@ -101,6 +101,7 @@ const sidebar_doc = {
       text: '📚参考手册',
       items: [
         { text: '工具类型', link: '/ts/reference/utility-types' },
+        { text: '⚡声明合并', link: '/ts/reference/declaration-merging' },
         { text: '枚举类型', link: '/ts/reference/enums' },
       ],
     },
