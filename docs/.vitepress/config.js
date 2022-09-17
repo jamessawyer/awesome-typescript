@@ -103,6 +103,7 @@ const sidebar_doc = {
         { text: '工具类型', link: '/ts/reference/utility-types' },
         { text: '⚡声明合并', link: '/ts/reference/declaration-merging' },
         { text: '枚举类型', link: '/ts/reference/enums' },
+        { text: 'Mixins', link: '/ts/reference/mixins' },
       ],
     },
   ]
