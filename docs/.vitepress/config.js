@@ -104,6 +104,7 @@ const sidebar_doc = {
         { text: '⚡声明合并', link: '/ts/reference/declaration-merging' },
         { text: '枚举类型', link: '/ts/reference/enums' },
         { text: 'Mixins', link: '/ts/reference/mixins' },
+        { text: '⚡Modules', link: '/ts/reference/modules' },
       ],
     },
   ]
