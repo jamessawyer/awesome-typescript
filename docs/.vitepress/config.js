@@ -180,6 +180,8 @@ export default {
   
   themeConfig: {
     logo: '/logo.svg',
+    outlineTitle: '目录',
+    outline: [2, 3],
     editLink: {
       text: '在GitHub编辑此页',
       pattern: 'https://github.com/jamessawyer/awesome-typescript/edit/main/docs/:path'
