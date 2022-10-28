@@ -350,7 +350,7 @@ declare namespace cats {
 interface CatKittySettings {}
 ```
 
-这个指南也确保了，库在被转义为UMD格式时，不会破坏用户的声明文件。
+这个指南也确保了库在被转义为UMD格式时，不会破坏用户的声明文件。
 
 
 
@@ -360,13 +360,13 @@ interface CatKittySettings {}
 
 ```typescript
 // UMD的导入方式（译者注）
-import exp = require('exporess')
+import exp = require('express')
 var app = exp()
 ```
 
-在兼容ES6的模块加载器中，最顶层的对象（这是是导入的 `exp`）只能拥有属性；最顶层的模块对象总是 `不能` 被调用。
+在兼容ES6的模块加载器中，最顶层的对象（这里是导入的 `exp`）只能拥有属性；最顶层的模块对象总是 `不能` 被调用。
 
-最常见的解决方法时，对可调用或可构造对象定义一个 `default` 导出；模块加载器通常自动检测这种情形，并使用 `default` 导出替换最顶层的对象。
+最常见的解决方法是，对可调用或可构造对象定义一个 `default` 导出；模块加载器通常自动检测这种情形，并使用 `default` 导出替换最顶层的对象。
 
 如果你在tsconfig.json中设置了 ["esModuleInterop": true](../tsconfig/compiler/interop-constraints.html#esmoduleinterop-👍🚀🚀)， TypeScript能自动帮你处理这个问题😎。
 
