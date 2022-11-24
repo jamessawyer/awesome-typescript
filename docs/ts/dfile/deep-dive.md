@@ -1,4 +1,6 @@
+---
 title: Deep Dive
+---
 
 [[toc]]
 
@@ -33,7 +35,7 @@ title: Deep Dive
 
 ### 2.2 值（`Values`）
 
-通过类型，你可能已经理解了什么是值。值是我们可以再表达式中引用的运行时名。比如 `let x = 5;` 创建一个称之为 `x` 的值。
+通过类型，你可能已经理解了什么是值。值是我们可以在表达式中引用的运行时名。比如 `let x = 5;` 创建一个称之为 `x` 的值。
 
 同样，为了更加明显，下面的东西会创建值：
 
@@ -210,20 +212,20 @@ let y: C.D // OK
 最后，我们可以使用 `namespace` 声明执行很多不同的合并。这不是一个特别现实的例子，但显示了各种有趣的行为:
 
 ```typescript
-namespace X {  // X 作为命名空间
-  export interface Y {} // Y作为类型
-  export class Z {} // Z既是值也是类型
+namespace X {           // X 作为命名空间
+  export interface Y {} // Y 作为类型
+  export class Z {}     // Z 既是值也是类型
 }
 
 // 别处某个地方
-namespace X { // X 作为命名空间
-  export var Y: number; // Y作为值
-  export namespace Z { // Z 作为命名空间
+namespace X {           // X 作为命名空间
+  export var Y: number; // Y 作为值
+  export namespace Z {  // Z 作为命名空间
     export class C {}
   }
 }
 
-type X = string; // X作为类型
+type X = string;        // X作为类型
 ```
 
 上面例子中，第一块创建了下面name含义：

@@ -112,7 +112,7 @@ declare namespace getArrayLength {
 export = getArrayLength;
 ```
 
-查看 [Module: Functions](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-function-d-ts.html) 查看工作细节，以及 [Module reference](https://www.typescriptlang.org/docs/handbook/modules.html) 页面。
+查看 [Module: Functions](./modules-function) 查看工作细节，以及 [Module reference](../../reference/modules) 页面。
 
 
 
@@ -221,7 +221,7 @@ declare namespace API {
 }
 ```
 
-想理解namespaces在 `.d.ts` 文件中的工作原理，可阅读 [.d.ts deep dive](https://www.typescriptlang.org/docs/handbook/declaration-files/deep-dive.html)。
+想理解namespaces在 `.d.ts` 文件中的工作原理，可阅读 [.d.ts deep dive](../deep-dive)。
 
 
 
@@ -237,7 +237,7 @@ export as namespace moduleName;
 
 ## 4️⃣ ⭐ 参考示例（Reference Example）
 
-为了演示将上面碎片化的部分如何一起运作的，下面是制作一个新模块时可作为可参考的 `.d.ts` 样板：
+为了演示将上面碎片化的部分如何一起运作的，下面是制作一个新模块时可作为参考的 `.d.ts` 样板：
 
 ```typescript
 // 对 [~THE LIBRARY NAME~] [~可选版本号~] 的类型定义

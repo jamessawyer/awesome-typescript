@@ -36,7 +36,7 @@ greeter('Hello world')
 
 // 🚀🚀 或者， 如果 --allowSyntheticDefaultImports 或
 // --esModuleInterop 开启了，文件也可以当做是默认导入被导入
-// import x from 'import x = require('[~模块名~]')'
+// import x from '[~模块名~]'
 
 // 参考TS文档
 // https://www.typescriptlang.org/docs/handbook/modules.html#export--and-import--require

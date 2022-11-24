@@ -2,8 +2,6 @@
 title: 模块：插件
 ---
 
-[[toc]]
-
 
 
 比如，当你想使用JS代码扩展另一个库时：
@@ -15,7 +13,7 @@ import { greeter } from 'super-greeter'
 greeter(2)
 greeter('Hello world')
 
-// 现在我们使用一个运行时新函数扩展对象
+// 我们使用一个运行时的新函数扩展对象
 import 'hyper-super-greeter'
 greeter.hyperGreet()
 ```
@@ -59,7 +57,7 @@ export module 'super-greeter' {
 }
 ```
 
-这使用到了 [声明合并](https://www.typescriptlang.org/docs/handbook/declaration-merging.html) 😎。
+这使用到了 [声明合并](../../reference/declaration-merging) 😎。
 
 
 

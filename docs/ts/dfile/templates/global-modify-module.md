@@ -10,7 +10,7 @@ title: Global Modify Module
 
 
 
-`全局修改模块（global-modifying modules）在导入时时修改全局作用域中的现有值。` 比如，可能存在一个模块在导入时给 `String.prototype` 添加先的成员。这种模式可能很危险，可能导致运行时冲突，但是我们仍可给它写一个声明文件。
+`全局修改模块（global-modifying modules）在导入时修改全局作用域中的现有值。` 比如，可能存在一个模块在导入时给 `String.prototype` 添加新的成员。这种模式可能很危险，可能导致运行时冲突😅，但是我们仍可给它写一个声明文件。
 
 
 

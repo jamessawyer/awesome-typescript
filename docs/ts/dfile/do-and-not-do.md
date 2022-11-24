@@ -22,7 +22,7 @@ function reverse(s: String): String;
 function reverse(s: string): string;
 ```
 
-不要使用 `Object` 类型，使用没原始 `object` 类型 （[TS2.2 添加](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html#object-type)）。
+不要使用 `Object` 类型，使用非基本（`non-primitive`） `object` 类型 （[TS2.2 添加](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html#object-type)）。
 
 
 
@@ -112,7 +112,7 @@ interface Fetcher {
 
 ## 重载和回调
 
-❌ `不要` 编写只在回调性上不同的重载：
+❌ `不要` 单独编写只在回调属性上不同的重载:
 
 ```typescript
 // ❌ 
@@ -123,7 +123,7 @@ declare function beforeAll(
 ): void;
 ```
 
-✅ `要` 使用最大输入值写一个单一重载：
+✅ `要` 使用最多参数数量写一个单一重载：
 
 ```typescript
 // ✅
@@ -134,9 +134,7 @@ declare function beforeAll(
 ```
 
 ::: tip
-
-🤔为什么：回调忽略参数总是合法的，因此不需要更短的重载。首先提供一个更短的回调函数允许传入类型不正确的函数，因为它们匹配第一个重载。
-
+🤔为什么：回调忽略参数总是合法的，因此不需要更短的重载。首先提供一个更短的回调函数会导致传入类型不正确的函数被允许，因为它们会匹配第一个重载。
 :::
 
 
@@ -159,7 +157,7 @@ var myElem: HTMLDivElement
 var x = fn(myElem) // x: unknown 什么😅?
 ```
 
-✅ `要` 将更更通用的签名放在更具体签名之后：
+✅ `要` 将更通用的签名放在更具体签名之后：
 
 ```typescript
 // ✅
@@ -201,9 +199,7 @@ interface Example {
 }
 ```
 
-
-
-注意这种合并只有当所有重载返回类型相同时才出现。
+注意这种合并`只适用`于当所有重载返回类型相同时🚨。
 
 ::: tip
 
@@ -220,7 +216,7 @@ var x: Example
 fn(x.diff)
 ```
 
-2.第二个原因是，当消费者使用TS的 `严格空检测` 功能。因为未指定的参数，在JS中默认为 `undefined`，因此给可选参数显式的传入一个 `undefined` 也是没有问题的。这个代码在严格空下也是OK的：
+2.第二个原因是，当消费者使用TS的 `严格空检测`（strict null checking） 功能。因为未指定的参数，在JS中默认为 `undefined`，因此给可选参数显式的传入一个 `undefined` 也是没有问题的。这个代码在严格空下也是OK的：
 
 ```typescript
 var x: Example

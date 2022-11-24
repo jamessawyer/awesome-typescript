@@ -18,7 +18,7 @@ title: Publishing
 
 ## 1️⃣ 在你的npm包中包含声明
 
-如果你的包邮一个主入口 `.js` 文件，则你需要再 `package.json` 中也知名主要的声明文件。📚 设置 `types` 属性指向打包好的声明文件。比如：
+如果你的包由一个主入口 `.js` 文件，则你需要在 `package.json` 中也指明主要的声明文件。📚 设置 `types` 属性指向打包好的声明文件。比如：
 
 ```json {5-6}
 {
@@ -105,11 +105,11 @@ title: Publishing
 
 ## 4️⃣ 使用 `typesVersion` 进行版本选择
 
-当TypeScript打开 `package.json` 文件理清它需要读取那个文件时，它首先查看 `typesVersions` 字段。
+当TypeScript打开 `package.json` 文件理清它需要读取哪个文件时，它首先查看 `typesVersions` 字段。
 
 
 
-### 4.1 文件件重定向（使用 `*`）
+### 4.1 文件夹重定向（使用 `*`）
 
 包含 `typesVersions` 的 `package.json` 文件可能看起来如下：
 
@@ -130,7 +130,7 @@ title: Publishing
 
 上面例子，如果你从 `"package-name"` 导入，当运行TS3.1时，TypeScript将从 `[...]/node_modules/package-name/ts3.1/index.d.ts` （和其它相对路径）解析。如果从 `package-name/foo` 导入，我们将查找 `[...]/node_modules/package-name/ts3.1/foo.d.ts` 和 `[...]/node_modules/package-name/ts3.1/foo/index.d.ts` 文件。
 
-加入你没有运行TS3.1呢？如果没有匹配上 `typesVersions`，TypeScript将再回退到 `types` 字段，因此`TS3.0`及以下版本将重定向到 `[...]/node_modules/package-name/index.d.ts` 文件。
+假如你没有运行TS3.1呢？如果没有匹配上 `typesVersions`，TypeScript将再回退到 `types` 字段，因此`TS3.0`及以下版本将重定向到 `[...]/node_modules/package-name/index.d.ts` 文件。
 
 
 

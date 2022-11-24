@@ -16,7 +16,7 @@ title: Consumption
 npm install -D @types/lodash
 ```
 
-值得注意的是，如果npm包已经像[Publishing](https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html)中描述的那样包含了它的声明文件，那么就不需要下载相应的`@types`包。
+值得注意的是，如果npm包已经像[Publishing](./publishing)中描述的那样包含了它的声明文件，那么就不需要下载相应的`@types`包。
 
 
 

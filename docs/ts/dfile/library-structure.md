@@ -94,14 +94,14 @@ define(..., ['someLib'], function(someLib) {
 
 模块存在4种模板：
 
-- [module.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html)
-- [module-class.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-class-d-ts.html)
-- [module-function.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-function-d-ts.html)
-- [module-plugin.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-plugin-d-ts.html)
+- [module.d.ts](./templates/modules-d-ts)
+- [module-class.d.ts](./templates/modules-class)
+- [module-function.d.ts](./templates/modules-function)
+- [module-plugin.d.ts](./templates/modules-plugin)
 
-你将首先阅读 [module.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html) 来了解它们的工作方式。
+你将首先阅读 [module.d.ts](./templates/modules-d-ts) 来了解它们的工作方式。
 
-1️⃣ 如果你的模块可以像函数一样调用，则使用 [module-function.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-function-d-ts.html) 模块：
+1️⃣ 如果你的模块可以像函数一样调用，则使用 [module-function.d.ts](./templates/modules-function) 模块：
 
 ```js {2}
 const x = require('foo')
@@ -109,7 +109,7 @@ const x = require('foo')
 const y = x(42)
 ```
 
-2️⃣ 如果你的模块可以通过 `new` 关键词进行构造，则使用 [module-class.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-class-d-ts.html)：
+2️⃣ 如果你的模块可以通过 `new` 关键词进行构造，则使用 [module-class.d.ts](./templates/modules-class)：
 
 ```js {2}
 const x = require('foo')
@@ -117,7 +117,7 @@ const x = require('foo')
 const y = new x('hello')
 ```
 
-3️⃣ 如果你有个模块，当它被导入时，对其它模块做出改变，则使用 [module-plugin.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-plugin-d-ts.html)：
+3️⃣ 如果你有个模块，当它被导入时，对其它模块做出改变，则使用 [module-plugin.d.ts](./templates/modules-plugin)：
 
 ```js {2}
 const jest = require('jest')
@@ -177,11 +177,11 @@ globalThis.createGreeting = function(s) {
 }
 ```
 
-当查看全局库代码是，你同时可以看到：
+当查看全局库代码时，你同时可以看到：
 
-- 最上层的 `var` 语句，或者 `function` 声明
+- 最顶层的 `var` 语句，或者 `function` 声明
 - 一个或者多个 `window.someName` 赋值
-- 假设DOM基础类型的存在，比如 `document` 或 `window` 的存在
+- 假定DOM基础类型的存在，比如 `document` 或 `window` 的存在
 
 你不可能看到：
 
@@ -200,7 +200,7 @@ globalThis.createGreeting = function(s) {
 
 ### 全局库模板
 
-[global.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/global-plugin-d-ts.html) 模板定义了一个示例库 `myLib`。确保阅读 [Preventing Name Conflicts部分](https://www.typescriptlang.org/docs/handbook/declaration-files/library-structures.html#preventing-name-conflicts)
+[global.d.ts](./templates/global-d-ts) 模板定义了一个示例库 `myLib`。确保阅读 [Preventing Name Conflicts部分](https://www.typescriptlang.org/docs/handbook/declaration-files/library-structures.html#preventing-name-conflicts)
 
 
 
@@ -253,7 +253,7 @@ UMD库文档也经常使用 `require` 展示 `Using in Node.js` 示例，以及�
 
 ### 模板
 
-使用 [module-plugin.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-plugin-d-ts.html) 模板。
+使用 [module-plugin.d.ts](./templates/modules-plugin) 模板。
 
 
 
