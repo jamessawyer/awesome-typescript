@@ -7,6 +7,12 @@ const nav = [
       { text: 'reference', link: '../ts/reference/index' },
     ] 
   },
+  { 
+    text: '🍬Tricks',
+    items: [
+      { text: 'Basarat', link: '/tricks/basarat/index' },
+    ]
+  },
   { text: '🤔blog', link: '/blog/first' },
   { 
     text: '📚书籍', 
@@ -24,7 +30,7 @@ const nav = [
 ]
 
 const sidebar_doc = {
-  '/ts/tsconfig/': [ // TSConfig.json 配置文件
+  '/ts/tsconfig': [ // TSConfig.json 配置文件
     {
       text: 'TSConfig',
       items: [
@@ -165,11 +171,24 @@ const sidebar_lib = {
   ],
 }
 
+const sidebar_tricks = {
+  '/tricks/basarat': [
+    {
+      text: 'Basarat TS Tricks',
+      items: [
+        { text: 'introduce', link: '/tricks/basarat/index' },
+        { text: 'lookup types', link: '/tricks/basarat/lookup-types' },
+      ]
+    }
+  ]
+}
+
 const sidebar = {
   ...sidebar_doc,
   ...sidebar_blog,
   ...sidebar_book,
   ...sidebar_lib,
+  ...sidebar_tricks,
 }
 
 export default {
