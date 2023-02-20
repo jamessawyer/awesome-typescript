@@ -193,7 +193,7 @@ define(["require", "exports", "legacy/moduleA"], function (
 
 ![client.d.ts](./imgs/triple-slashes-1.webp)
 
-这个等价定义 `/// <reference type="vite/client">`指令。
+这个等价定义 `/// <reference type="vite/client" />`指令。
 
 我们也可以发现其定义了另外2个指令：
 
@@ -202,7 +202,7 @@ define(["require", "exports", "legacy/moduleA"], function (
 /// <reference path="./types/importMeta.d.ts" />
 ```
 
-先看 `/// <reference path="./types/importMeta.d.ts"` 是对相对路径引用，因为 `client.d.ts` 声明文件中用到了 `imprtMeta.d.ts` 中定义的类型
+先看 `/// <reference path="./types/importMeta.d.ts" />` 是对相对路径引用，因为 `client.d.ts` 声明文件中用到了 `imprtMeta.d.ts` 中定义的类型
 
 ![reference-path](./imgs/triple-slashes-2.webp)
 
