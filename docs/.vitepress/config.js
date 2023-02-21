@@ -2,9 +2,9 @@ const nav = [
   { 
     text: '📄ts Docs', 
     items: [
-      { text: 'tsconfig', link: '../ts/tsconfig/index' },
-      { text: 'd.ts声明文件', link: '../ts/dfile/index' },
-      { text: 'reference', link: '../ts/reference/index' },
+      { text: 'tsconfig', link: '/ts/tsconfig/index' },
+      { text: 'd.ts声明文件', link: '/ts/dfile/index' },
+      { text: 'reference', link: '/ts/reference/index' },
     ] 
   },
   { 
@@ -17,14 +17,15 @@ const nav = [
   { 
     text: '📚书籍', 
     items: [
-      { text: 'tackle typescript', link: '../book/tackle-ts/index' },
+      { text: 'tackle typescript', link: '/book/tackle-ts/index' },
     ]
   },
   {
     text: '🔥常用工具',
     items: [
-      { text: 'tsup', link: '../lib/tsup/index' },
-      { text: 'tsc', link: '../lib/tsc' },
+      { text: 'tsup', link: '/lib/tsup/index' },
+      { text: 'tsx', link: '/lib/tsx/index' },
+      { text: 'tsc', link: '/lib/tsc' },
     ]
   },
 ]
@@ -164,9 +165,17 @@ const sidebar_book = {
 const sidebar_lib = {
   '/lib/tsup': [
     {
-      text: 'tsup',
+      text: 'tsup@v6.6+',
       items: [
-        { text: 'Home', link: '/lib/tsup/index' }
+        { text: '官方文档', link: '/lib/tsup/index' }
+      ]
+    }
+  ],
+  '/lib/tsx': [
+    {
+      text: 'tsx',
+      items: [
+        { text: '官方文档', link: '/lib/tsx/index' }
       ]
     }
   ],
