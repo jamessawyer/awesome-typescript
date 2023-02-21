@@ -1,5 +1,5 @@
 {
-  "name": "awesome-node",
+  "name": "awesome-typescript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -23,7 +23,7 @@
     }
   },
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.46",
+    "vitepress": "1.0.0-alpha.47",
     "vue": "^3.2.47"
   }
 }
