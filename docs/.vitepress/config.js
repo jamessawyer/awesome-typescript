@@ -5,6 +5,7 @@ const nav = [
       { text: 'tsconfig', link: '/ts/tsconfig/index' },
       { text: 'd.ts声明文件', link: '/ts/dfile/index' },
       { text: 'reference', link: '/ts/reference/index' },
+      { text: '🔥深入理解tsconfig配置', link: '/ts/in-depth/rootDirs' },
     ] 
   },
   { 
@@ -117,6 +118,14 @@ const sidebar_doc = {
         { text: '三斜线指令', link: '/ts/reference/triple-slashes-directives' },
       ],
     },
+  ],
+  '/ts/in-depth': [
+    {
+      text: '深入理解配置',
+      items: [
+        { text: 'rootDirs的含义', link: 'ts/in-depth/rootDirs' }
+      ]
+    }
   ]
 }
 const sidebar_blog = {
