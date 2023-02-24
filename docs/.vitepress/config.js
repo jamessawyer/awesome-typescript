@@ -112,6 +112,7 @@ const sidebar_doc = {
         { text: '⚡声明合并', link: '/ts/reference/declaration-merging' },
         { text: '枚举类型', link: '/ts/reference/enums' },
         { text: 'Mixins', link: '/ts/reference/mixins' },
+        { text: 'Node中的ESM', link: '/ts/reference/esm-in-nodejs' },
         { text: '⚡Modules', link: '/ts/reference/modules' },
         { text: '三斜线指令', link: '/ts/reference/triple-slashes-directives' },
       ],
