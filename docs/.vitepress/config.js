@@ -123,7 +123,8 @@ const sidebar_doc = {
     {
       text: '深入理解配置',
       items: [
-        { text: 'rootDirs的含义', link: 'ts/in-depth/rootDirs' }
+        { text: 'rootDir生成产物目录', link: 'ts/in-depth/rootDir' },
+        { text: 'rootDirs的含义', link: 'ts/in-depth/rootDirs' },
       ]
     }
   ]
