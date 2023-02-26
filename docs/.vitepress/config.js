@@ -5,7 +5,7 @@ const nav = [
       { text: 'tsconfig', link: '/ts/tsconfig/index' },
       { text: 'd.ts声明文件', link: '/ts/dfile/index' },
       { text: 'reference', link: '/ts/reference/index' },
-      { text: '🔥深入理解tsconfig配置', link: '/ts/in-depth/rootDirs' },
+      { text: '🔥深入理解tsconfig配置', link: '/ts/in-depth/tsconfig-overview' },
     ] 
   },
   { 
@@ -131,6 +131,8 @@ const sidebar_doc = {
       text: '博文搬运',
       items: [
         { text: '详解tsconfig.json文件', link: '/ts/in-depth/tsconfig-overview' },
+        { text: '⚡TypeScirpt类型声明完全指南', link: '/ts/in-depth/declaration-file-guide' },
+        { text: '在TypeScript中使用namespace封装数据', link: '/ts/in-depth/namespace-in-typescript' },
       ]
     }
   ]
