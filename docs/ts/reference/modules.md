@@ -131,7 +131,7 @@ let myValidator = new validator.ZipCodeValidator()
 
 
 
-## ⭐ 导入模块只为模块副作用
+## ⭐ 仅为副作用导入模块
 
 尽管不推荐这种做法😅，某些模块可设置一些能被其它模块使用的全局状态。这些模块可能没有任何导出或者消费者对其导出不感兴趣。为了导入这些模块，可以使用：
 
@@ -270,11 +270,11 @@ import { utilities } from './index'
 
 ## ⭐  `export =` 和 `import = require()`
 
-📚CommonJS和AMD都有 `exports` 对象包含模块所有导出的概念。
+📚CommonJS和AMD都有 `exports` 对象的概念，它包含一个模块的所有导出。
 
-它们也支持使用自定义单一对象 替换 `exports` 的做法。`默认导出是用来替代这种行为的`。但是，这2者是不兼容的😅。TypeScript 支持 `export =` 来建模传统的CommonJS和AMD工作流程。
+它们也支持使用自定义单一对象 替换 `exports` 的做法。`默认导出是用来替代这种行为的`。但是，这2者是不兼容的😅。TypeScript 支持 `export =` 对传统的CommonJS和AMD工作流进行建模。
 
-📚 `export =` 语法指定一个从模块中导出的单一对象。可以是一个类，接口，namespace，函数或枚举。
+📚 `export =` 语法指定从模块中导出的单个对象。可以是一个类，接口，namespace，函数或枚举。
 
 ::: tip
 
@@ -552,7 +552,7 @@ declare function add(a: number, b: number);
 
 :::
 
-## 📚 环境模块（`Ambient Modules`）
+## 📚🚀 环境模块（`Ambient Modules`）
 
 在Node.js中，大多数任务都是通过加载一个或多个模块完成的。
 
@@ -560,7 +560,7 @@ declare function add(a: number, b: number);
 
 我们可以将每个模块都通过顶层的导出声明，将模块定义在自己的 `.d.ts` 文件中，但是将它们都写入到一个大的 `.d.ts` 声明文件中会更加的方便🚀。
 
-为了这样做，我们使用一个类似环境命名空间的构造，到我们使用的是 `module` 关键词，并将模块名用引号包裹起来，这样之后我们便可以导入它了。
+为了这样做，我们使用一个类似环境命名空间的构造，但是我们使用的是 `module` 关键词，并将模块名用引号包裹起来，这样之后我们便可以导入它了。
 
 :::
 
@@ -609,7 +609,7 @@ let myUrl = URL.parse('https://www.typescript.com')
 declare module 'hot-new-module';
 ```
 
-来自简写模块的所有导入都是 `any` 类型：
+来自速写模块的所有导入都是 `any` 类型：
 
 ```typescript
 import x, { y } from 'hot-new-module';
@@ -617,7 +617,7 @@ import x, { y } from 'hot-new-module';
 
 
 
-### 🤔 通配模块声明
+### 🎉🎉 通配模块声明
 
 像 [SystemJS](https://github.com/systemjs/systemjs/blob/master/docs/module-types.md) 和  [AMD](https://github.com/amdjs/amdjs-api/blob/master/LoaderPlugins.md) 这样的模块加载器，允许非JS内容被导入😎。`它们通常会使用前缀或后缀特殊加载语法`。通配模块声明可用于覆盖下面这些场景：
 
