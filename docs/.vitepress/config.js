@@ -125,6 +125,7 @@ const sidebar_doc = {
       items: [
         { text: 'rootDir生成产物目录', link: '/ts/in-depth/rootDir' },
         { text: 'rootDirs的含义', link: '/ts/in-depth/rootDirs' },
+        { text: 'Strick Options相关的配置项', link: '/ts/in-depth/strict-options' },
       ]
     },
     {
