@@ -2,3 +2,8 @@
   --vp-c-text-code: #28ffdc;
   --vp-c-mute: #232932;
 }
+
+.vp-doc strong {
+  /* color: #d1a13a; */
+  color: #1565af;
+}
