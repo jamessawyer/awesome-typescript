@@ -18,6 +18,7 @@ const nav = [
   { 
     text: '📚书籍', 
     items: [
+      { text: 'TS类型体操', link: '/book/master-ts/2' },
       { text: 'tackle typescript', link: '/book/tackle-ts/index' },
     ]
   },
@@ -182,6 +183,14 @@ const sidebar_book = {
       ]
     }
   ],
+  '/book/master-ts': [ // TypeScript 类型体操通关秘籍
+    {
+      text: 'TypeScript 类型体操通关秘籍',
+      items: [
+        { text: '2.TS必火的原因', link: '/book/master-ts/2' },
+      ]
+    }
+  ]
 }
 const sidebar_lib = {
   '/lib/tsup': [
