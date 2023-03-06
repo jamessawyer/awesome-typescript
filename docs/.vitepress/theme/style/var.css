@@ -1,9 +1,24 @@
 :root {
   --vp-c-text-code: #28ffdc;
   --vp-c-mute: #232932;
+
+  --vp-c-bg-overlay: rgba(30,30,32,0.75);
+}
+
+.dark {
+  --vp-c-bg-overlay: rgba(30,30,32,0.75);
 }
 
 .vp-doc strong {
   /* color: #d1a13a; */
   color: #1565af;
+}
+
+
+.medium-zoom-overlay {
+  z-index: 20;
+}
+
+.medium-zoom-image {
+  z-index: 21;
 }
