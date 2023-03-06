@@ -188,6 +188,7 @@ const sidebar_book = {
       text: 'TypeScript 类型体操通关秘籍',
       items: [
         { text: '2.TS必火的原因', link: '/book/master-ts/2' },
+        { text: '3.TS类型编程为什么叫类型体操?', link: '/book/master-ts/3' },
       ]
     }
   ]
