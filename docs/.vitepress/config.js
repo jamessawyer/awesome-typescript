@@ -14,7 +14,8 @@ const nav = [
       { text: 'Basarat', link: '/tricks/basarat/index' },
     ]
   },
-  { text: '🤔blog', link: '/blog/first' },
+  { text: '🧑‍💻blog', link: '/blog/first' },
+  { text: '🏂TS挑战', link: '/challenge/index' },
   { 
     text: '📚书籍', 
     items: [
@@ -226,12 +227,24 @@ const sidebar_tricks = {
   ]
 }
 
+const sidebar_challenge = {
+  '/challenge/': [
+    {
+      text: 'TS类型挑战',
+      items: [
+        { text: 'introduce', link: '/challenge/index' },
+      ]
+    },
+  ]
+}
+
 const sidebar = {
   ...sidebar_doc,
   ...sidebar_blog,
   ...sidebar_book,
   ...sidebar_lib,
   ...sidebar_tricks,
+  ...sidebar_challenge,
 }
 
 export default {
