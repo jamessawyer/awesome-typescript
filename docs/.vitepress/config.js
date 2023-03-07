@@ -190,6 +190,7 @@ const sidebar_book = {
         { text: '2.TS必火的原因', link: '/book/master-ts/2' },
         { text: '3.TS类型编程为什么叫类型体操?', link: '/book/master-ts/3' },
         { text: '4.TS支持的类型和类型运算', link: '/book/master-ts/4' },
+        { text: '5.套路1 - 模式匹配', link: '/book/master-ts/5' },
       ]
     }
   ]
