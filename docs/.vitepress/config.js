@@ -14,7 +14,7 @@ const nav = [
       { text: 'Basarat', link: '/tricks/basarat/index' },
     ]
   },
-  { text: '🧑‍💻blog', link: '/blog/first' },
+  { text: '🧑‍💻blog', link: '/blog/resource' },
   { text: '🏂TS挑战', link: '/challenge/index' },
   { 
     text: '📚书籍', 
@@ -144,12 +144,15 @@ const sidebar_doc = {
 const sidebar_blog = {
   '/blog/': [
     {
+      text: 'Resource',
+      items: [
+        { text: '资源', link: '/blog/resource' }
+      ]
+    },
+    {
       text: 'blog',
       items: [
-        {
-          text: '第一篇blog',
-          link: '/blog/first',
-        }
+        { text: '第一篇blog', link: '/blog/first' }
       ]
     },
     { 
