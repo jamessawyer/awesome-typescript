@@ -196,6 +196,7 @@ const sidebar_book = {
         { text: '4.TS支持的类型和类型运算', link: '/book/master-ts/4' },
         { text: '5.套路1 - 模式匹配', link: '/book/master-ts/5' },
         { text: '6.套路2 - 重新构造做变换🔥', link: '/book/master-ts/6' },
+        { text: '7.套路3 - 递归复用做循环🔥', link: '/book/master-ts/7' },
       ]
     }
   ]
