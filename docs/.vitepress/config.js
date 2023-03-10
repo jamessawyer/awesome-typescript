@@ -197,6 +197,7 @@ const sidebar_book = {
         { text: '5.套路1 - 模式匹配', link: '/book/master-ts/5' },
         { text: '6.套路2 - 重新构造做变换🔥', link: '/book/master-ts/6' },
         { text: '7.套路3 - 递归复用做循环🔥', link: '/book/master-ts/7' },
+        { text: '8.套路4 - 数组长度做计数', link: '/book/master-ts/8' },
       ]
     }
   ]
