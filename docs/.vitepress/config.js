@@ -199,6 +199,7 @@ const sidebar_book = {
         { text: '7.套路3 - 递归复用做循环🔥', link: '/book/master-ts/7' },
         { text: '8.套路4 - 数组长度做计数', link: '/book/master-ts/8' },
         { text: '9.套路5 - 联合分散可简化🔥', link: '/book/master-ts/9' },
+        { text: '10.套路6 - 特殊特性要记清', link: '/book/master-ts/10' },
       ]
     }
   ]
