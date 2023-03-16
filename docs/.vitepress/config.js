@@ -201,6 +201,7 @@ const sidebar_book = {
         { text: '9.套路5 - 联合分散可简化🔥', link: '/book/master-ts/9' },
         { text: '10.套路6 - 特殊特性要记清', link: '/book/master-ts/10' },
         { text: '11.类型体操顺口溜', link: '/book/master-ts/11' },
+        { text: '16.TS新语法：infer extends🍭', link: '/book/master-ts/16' },
       ]
     }
   ]
