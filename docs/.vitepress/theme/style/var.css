@@ -13,6 +13,13 @@
   color: #e5bd66;
   /* color: #1565af; */
 }
+.vp-doc .custom-block a {
+  color: #7b76e9;
+  text-decoration: underline;
+}
+.vp-doc a {
+  text-decoration: underline;
+}
 
 
 .medium-zoom-overlay {
