@@ -2,6 +2,15 @@
 title: TS相关的资源
 ---
 
+## 🧃基础
+
+1. [🔥🔥Types are just data - type-level-typescript ](https://type-level-typescript.com/types-are-just-data)  必读！！
+   - 如何利用`集合`的概念去理解类型
+   - 通过集合，可以对 `string` | `number` 等基础类型与 `any` & `unknown` & `never` 这些类型的关系有很直观的理解
+   - 通过集合的概念 `子类型` & `父类型` 的理解就是小菜一碟
+
+
+
 ## 🚀 高级概念
 
 1. [如何进阶TypeScript功底？一文带你理解TS中各种高级语法 - 19组清风@掘金](https://juejin.cn/post/7089809919251054628#heading-10)
@@ -65,10 +74,17 @@ TS编写的一些Tips:
      function isRect(shape: Shape): shape is Rect { // [!code ++]
        return shape.kind === 'rect';
      }
+     ```
+     
+     
+
+
 
 
 
 
 
 createdAt: 2023年03月09日09:44:05
+
+updatedAt: 2023年03月17日23:40:58
 
