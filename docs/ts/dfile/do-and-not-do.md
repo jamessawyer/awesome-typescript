@@ -6,7 +6,7 @@ title: do and not do
 
 
 
-## Number，String, Boolean, Symbol, Object
+### Number，String, Boolean, Symbol, Object
 
 ❌ `不要` 使用 `Number`, `String`, `Boolean`, `Symbol` 或 `Object` 这些类型。这些类型是指非原始包装对象，在JS代码中几乎不会使用到。
 
@@ -26,7 +26,7 @@ function reverse(s: string): string;
 
 
 
-## 泛型
+### 泛型
 
 ## 
 
@@ -34,7 +34,7 @@ function reverse(s: string): string;
 
 
 
-## any
+### any
 
 ❌ `不要` 使用 `any` 作为类型，除非正从JS项目迁移到TS项目。编译器`实际上` 将 `any` 当做 `请对这个东西关闭类型检测`。类似于在变量使用前放置 `@ts-ignore` 注释。这在从JS项目迁移到TS项目很有用，因为你可以对还没有迁移的部分设置为 `any`，但在一个完整的TypeScript项目中，你会禁用任何使用类型检查的程序部分。
 
@@ -46,7 +46,7 @@ function reverse(s: string): string;
 
 
 
-## 回调的返回类型
+### 回调的返回类型
 
 ❌ `不要` 使用 `any` 作为忽略返回值的回调函数的返回类型
 
@@ -84,7 +84,7 @@ function fn(x: () => void) {
 
 
 
-## 回调中的可选参数
+### 回调中的可选参数
 
 ❌ `不要` 在回调中使用可选参数，除非你真的需要它：
 
@@ -110,7 +110,7 @@ interface Fetcher {
 
 
 
-## 重载和回调
+### 重载和回调
 
 ❌ `不要` 单独编写只在回调属性上不同的重载:
 
@@ -143,7 +143,7 @@ declare function beforeAll(
 
 
 
-## ⭐ 顺序
+### ⭐ 顺序
 
 ❌ `不要` 将更通用的重载放在更精准重载之前：
 
@@ -177,7 +177,7 @@ var x = fn(myElem) // x: string 😎
 
 
 
-## 使用可选参数
+### 使用可选参数
 
 ❌ `不要` 写仅尾部参数不同的重载：
 
@@ -232,7 +232,7 @@ x.diff('something', true ? undefined : 'hour')
 
 
 
-## 使用联合类型（Use Union Types）
+### 使用联合类型（Use Union Types）
 
 ❌ `不要` 只在一个参数位置写不同类型的重载:
 

@@ -130,7 +130,7 @@ import fastify from 'fastify'
 import fastify, { FastifyInstance } from 'fastify'
 ```
 
-😅 要涵盖所有这些导入方式，需要JS代码实际支持所有这些模式。为了支持很多模式，CommonJS模块可能需要看起来如下：
+😅 要涵盖所有这些导入方式，需要JS代码实际支持所有这些模式。为了支持多种模式，CommonJS模块可能需要看起来如下：
 
 ```js {9,11,13}
 class FastifyInstance {}
