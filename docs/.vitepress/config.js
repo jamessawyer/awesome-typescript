@@ -203,6 +203,7 @@ const sidebar_book = {
         { text: '11.类型体操顺口溜', link: '/book/master-ts/11' },
         { text: '16.TS新语法：infer extends🍭', link: '/book/master-ts/16' },
         { text: '17.原理篇：逆变、协变、双向协变、不变👩‍🏫', link: '/book/master-ts/17' },
+        { text: '23.3种类型来源和3种模块语法📚', link: '/book/master-ts/23' },
         { text: '26.2个真实的TS类型编程案例🧚‍♀️', link: '/book/master-ts/26' },
         { text: '27.TS新语法：satisfies推导🍭', link: '/book/master-ts/27' },
       ]
