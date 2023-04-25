@@ -2,6 +2,10 @@
 title: TS相关的资源
 ---
 
+## 🔧 工具
+
+1. [TS config helper](https://tsconfiger.netlify.app/) TS所有配置项在线工具，每个字段都有解释，并包含很多预设
+
 ## 🧃基础
 
 1. [🔥🔥Types are just data - type-level-typescript ](https://type-level-typescript.com/types-are-just-data)  必读！！
@@ -86,5 +90,5 @@ TS编写的一些Tips:
 
 createdAt: 2023年03月09日09:44:05
 
-updatedAt: 2023年03月17日23:40:58
+updatedAt: 2023年04月25日15:31:00
 
